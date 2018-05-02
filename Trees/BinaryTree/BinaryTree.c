@@ -162,12 +162,12 @@ NodeT SearchBTree(InfoBT Tree, TEL element, int * const found, int * const error
 
     if(Tree == NULL){ // Invalid info node.
         *error = 1;
-        return NULL;
+        return;
     }
 
     if(EmptyBTree(Tree,error)){ // Empty tree.
         *error = 2;
-        return NULL;
+        return;
     }
     
     assist = SBTree(Tree->Head,element); // Search all tree.
@@ -200,12 +200,12 @@ NodeT SearchNoRecursionBTree(InfoBT Tree, TEL element, int * const found, int * 
 
     if(Tree == NULL){ // Invalid info node.
         *error = 1;
-        return NULL;
+        return;
     }
 
     if(EmptyBTree(Tree,error)){ // Empty tree.
         *error = 2;
-        return NULL;
+        return;
     }
 
     // Start searching.//
