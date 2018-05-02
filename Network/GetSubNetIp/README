@@ -1,0 +1,1 @@
+Convert ip and mask to sub net ip. Ips must be a string like this: "1.2.3.123" 
