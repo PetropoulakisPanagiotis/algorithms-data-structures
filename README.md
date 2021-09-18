@@ -4,7 +4,7 @@
   <img width="450" height="300" src="https://www.geeksforgeeks.org/wp-content/uploads/Competitive-Programming-1.jpg">
 </p>
 
-In this repository you can my implementations of some algorithms and data structures.
+In this repository you can find my implementations of some algorithms and data structures.
 
 ## Author
 * Petropoulakis Panagiotis petropoulakispanagiotis@gmail.com
