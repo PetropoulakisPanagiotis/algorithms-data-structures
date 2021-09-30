@@ -21,11 +21,21 @@ typedef struct node{
 linkedListPtr createLinkedList(void);
 int destroyLinkedList(linkedListPtr*);
 
+nodePtr createNode(int value);
+
 int insertStartLinkedList(linkedListPtr, int value);
 int insertEndLinkedList(linkedListPtr, int value);
 
+int insertMidlePointersLinkedList(linkedListPtr, int value);
+int insertMidleSizeLinkedList(linkedListPtr, int value);
+
 int existsValueLinkedList(linkedListPtr, int value);
 int deleteValueLinkedList(linkedListPtr, int value);
+
+// Merge sort //
+void sortLinkedList(nodePtr* listPtr);
+void divideLinkedList(nodePtr initialList, nodePtr* aSubList, nodePtr* bSubList);
+nodePtr mergeLinkedList(nodePtr aSubList, nodePtr bSubList);
 
 void printLinkedList(linkedListPtr);
 #endif

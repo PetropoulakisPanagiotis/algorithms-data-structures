@@ -8,11 +8,16 @@ int main(void){
     myListPtr = createLinkedList();
 
     insertEndLinkedList(myListPtr, 1);
-    insertEndLinkedList(myListPtr, 2);
+    insertEndLinkedList(myListPtr, 7);
     insertEndLinkedList(myListPtr, 3);
+    insertEndLinkedList(myListPtr, 0);
+    insertEndLinkedList(myListPtr, 4);
     printLinkedList(myListPtr);
-    printf("\n\n\n");
     
+    printf("\nSsorted\n"); 
+    sortLinkedList(&myListPtr->head);
+    printLinkedList(myListPtr);
+    /*   
     insertStartLinkedList(myListPtr, 5);
     printLinkedList(myListPtr);  
     printf("\n\n\n");
@@ -25,8 +30,17 @@ int main(void){
     deleteValueLinkedList(myListPtr, 2);
     printf("\n\n");
     printLinkedList(myListPtr);
-   
+ 
+    printf("\nInsert Middle\n"); 
+    insertMidleSizeLinkedList(myListPtr, 22); 
+    printLinkedList(myListPtr);
 
+    printf("\nInsert Middle\n"); 
+    insertMidleSizeLinkedList(myListPtr, 211); 
+    printLinkedList(myListPtr);
+
+
+    */
     destroyLinkedList(&myListPtr);
 
     return 0;
